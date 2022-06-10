@@ -1,7 +1,6 @@
 # EagleEye
- 
+ ### 2D Top-Down Puzzle Shooter für den PC
 ## Zusammenfassung
-### 2D Top-Down Puzzle Shooter für den PC
 
 Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf die Hilfe deiner Greifvögel verlassen. Sie alle haben verschiedenen Stärken. Es kann entweder nur die Spielerposition, die Umgebung oder das verschiedene Wild im Wald erfasst werden. Aber pass auf nicht das falsche Tier zu erlegen. Und behalte deine Munition/Pfeile im Blick.
 
