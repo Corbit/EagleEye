@@ -11,14 +11,14 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Base
+  - Player
+  - Obstacle
+  - Target_Hit
+  - Target_1
+  - Target_2
+  - Target_3
+  - Target_4
   - 
   - 
   - 
