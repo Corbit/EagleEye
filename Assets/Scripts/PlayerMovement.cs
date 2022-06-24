@@ -8,25 +8,31 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed = 5f;
 
-    public Rigidbody2D rb;
+    //Wenn das Script eh am Player hängt, muss man das Objekt nicht extra importieren
+    //public Rigidbody2D rb;
+    
     public Camera cam;
     Vector2 movement;
-    Vector2 mousePos;
+    Vector3 mousePos;
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        //nicht notwending
+        /*  movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical"); */
 
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition); 
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+       
+       // MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-        Vector2 lookDir = mousePos - rb.position;
+        Vector3 lookDir = mousePos - transform.position;
+        lookDir.Normalize();
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        
+        transform.rotation = Quaternion.Euler(0,0,angle);
     }
 }
