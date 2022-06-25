@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Base
+  - Target_Hit
+  - Hunter
   layers:
   - Default
   - TransparentFX
