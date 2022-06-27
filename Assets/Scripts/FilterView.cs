@@ -23,25 +23,18 @@ public class FilterView : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {          
             hide(player);
-            hide(obstacle);
+            display(obstacle);
             display(map);
         }
-        //Obstacle
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {          
-           hide(player);
-           hide(map);
-           display(obstacle);
-            
-        }
+    
         //Target
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {          
            
             
         }
         //Player
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {          
            hide(map);
            hide(obstacle);
