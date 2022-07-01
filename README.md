@@ -15,7 +15,7 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
     - [x] Position des Mauszeigers in Relation zum Player definiert die Richtung in die geschossen wird
     - [x] Durch Klicken der linken Maustaste wird ein Projektil verschossen 
 - [ ] Player verschießt Projektile/Pfeile, die von Hindernissen abprallen
-    - [ ] Einfallwinkel = Ausfallwinkel
+    - [x] Einfallwinkel = Ausfallwinkel
 - [ ] Hörbares Signal, wenn ein Target erlegt wurde
     - [ ] Auch wenn gerade nicht die Ansicht des Targets aktiv ist
 - [ ] Das Level ist gescheitert, wenn der Player ein geschütztes Target erlegt oder keine Munition mehr hat.
