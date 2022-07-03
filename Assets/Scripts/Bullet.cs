@@ -11,10 +11,12 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     private int bulletTimer = 700;
     Vector3 lastVelocity;
+    public AudioSource tickSource;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        tickSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -44,6 +46,7 @@ public class Bullet : MonoBehaviour
         else if (collision.gameObject.tag == "Enemy")
         {
             Destroy(collision.gameObject);
+            tickSource.Play();
         }
         else if (collision.gameObject.tag == "Friendly")
         {
