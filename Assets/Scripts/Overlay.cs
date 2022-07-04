@@ -28,7 +28,6 @@ public class Overlay : MonoBehaviour
             if (Input.GetButtonDown("Fire1") && ammocount < collectiblearr.Length)
             {
                 Destroy(collectiblearr[ammocount]);
-                Debug.Log("Destroy" + ammocount);
                 ammocount++;
             }
 

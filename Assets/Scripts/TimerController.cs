@@ -8,11 +8,14 @@ public class TimerController : MonoBehaviour
 {
     public static TimerController instance;
     public Text timeCounter;
+    public Text winTime;
 
     private TimeSpan timePlaying;
     private bool timerGoing;
     private float elapsedTime;
 
+    public GameObject Target;
+    public GameObject WinScreen;
 
     private void Awake()
     {
@@ -31,6 +34,14 @@ public class TimerController : MonoBehaviour
         {
             BeginTimer();
         }
+
+        /*if(Target == null)
+        {
+            winTime.text = timeCounter.text;
+            EndTimer();
+            Time.timeScale = 0;
+            WinScreen.SetActive(true);
+        }*/
     }
 
     public void BeginTimer()

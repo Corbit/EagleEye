@@ -45,4 +45,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         IsPaused = !IsPaused;
     }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

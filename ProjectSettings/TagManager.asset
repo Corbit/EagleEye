@@ -8,6 +8,7 @@ TagManager:
   - Base
   - Target_Hit
   - Hunter
+  - Enemy
   layers:
   - Default
   - TransparentFX
