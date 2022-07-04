@@ -13,6 +13,7 @@ public class Overlay : MonoBehaviour
     public Transform RemainingTransform;
     public int ammocount = 0;
 
+    public GameObject GameOverScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,16 +23,20 @@ public class Overlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && ammocount < collectiblearr.Length)
+        if(Time.timeScale != 0)
         {
-            Destroy(collectiblearr[ammocount]);
-            Debug.Log("Destroy" + ammocount);
-            ammocount++;
-        }
+            if (Input.GetButtonDown("Fire1") && ammocount < collectiblearr.Length)
+            {
+                Destroy(collectiblearr[ammocount]);
+                Debug.Log("Destroy" + ammocount);
+                ammocount++;
+            }
 
-        if (ammocount >= collectiblearr.Length)
-        {
-            Debug.Log("You Lose");
+            if (ammocount >= collectiblearr.Length)
+            {
+                GameOverScreen.SetActive(true);
+                Time.timeScale = 0f;
+            }
         }
     }
 
