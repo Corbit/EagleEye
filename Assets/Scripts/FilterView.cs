@@ -8,12 +8,13 @@ public class FilterView : MonoBehaviour
     private string map = "Base";
     private string player = "Player";
 
+    private string target = "Target_Hit";
+
     // Start is called before the first frame update
     void Start()
     {
-        hide(obstacle);
-        hide(map);
-        
+        hideAll();
+        display(player);
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class FilterView : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {          
             hide(player);
+            hide(target);
             display(obstacle);
             display(map);
         }
@@ -30,7 +32,10 @@ public class FilterView : MonoBehaviour
         //Target
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {          
-           
+           hide(player);
+           hide(obstacle);
+           hide(map);
+           display(target);
             
         }
         //Player
@@ -38,6 +43,7 @@ public class FilterView : MonoBehaviour
         {          
            hide(map);
            hide(obstacle);
+           hide(target);
            display(player);
             
         }
@@ -75,5 +81,6 @@ public class FilterView : MonoBehaviour
         hide(map);
         hide(obstacle);
         hide(player);
+        hide(target);
     }
 }

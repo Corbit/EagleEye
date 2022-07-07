@@ -43,7 +43,7 @@ public class Bullet : MonoBehaviour
         {
             // Game Over
         }
-        else if (collision.gameObject.tag == "Enemy")
+        else if (collision.gameObject.tag == "Target_Hit")
         {
             Destroy(collision.gameObject);
             tickSource.Play();
