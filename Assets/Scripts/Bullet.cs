@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
 
 {
     private Rigidbody2D rb;
-    private int bulletTimer = 700;
+    private int bulletTimer = 1700;
     Vector3 lastVelocity;
     public AudioSource tickSource;
 
