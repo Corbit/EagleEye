@@ -9,7 +9,7 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
 - [ ] Mit Num Pad/Zahlen durch die verschiedenen Ansichten filtern.
     - [x] Ansicht für die Position des Players
     - [ ] Ansicht für die jeweiligen geschützten Targets
-    - [ ] Ansicht für die freigegeben Targets
+    - [x] Ansicht für die freigegeben Targets
     - [x] Ansicht der Karte inklusiven Hindernissen
 - [x] Zielen und Schießen via Maus
     - [x] Position des Mauszeigers in Relation zum Player definiert die Richtung in die geschossen wird
@@ -24,8 +24,8 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
         - [ ] Zurück zum Startmenü
 - [ ] 9 verschiedene Level
     - [ ] inklusive 3 Tutorial Level
-        - [ ] Spieler lernt auf Targets zu schießen
-        - [ ] Spieler lernt nicht auf falsche Targets zu schießen
+        - [x] Spieler lernt auf Targets zu schießen
+        - [x] Spieler lernt nicht auf falsche Targets zu schießen
         - [ ] Spieler lernt, dass Projektile von Hindernissen abprallen
 - [ ] In höheren Leveln (~ ab Level 6) erhöht sich der Schwierigkeitsgrad.
     - [ ] Anstatt stillstehenden Targets, gibt es nur Targets, die sich auf einer vordefinierten Route bewegen
