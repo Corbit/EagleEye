@@ -9,6 +9,10 @@ TagManager:
   - Target_Hit
   - Hunter
   - Enemy
+  - Animal_1
+  - Animal_2
+  - Animal_3
+  - Animal_4
   layers:
   - Default
   - TransparentFX
