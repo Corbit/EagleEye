@@ -624,7 +624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCounter: {fileID: 1707680644}
   winTime: {fileID: 2094614674}
-  Target: {fileID: 0}
+  Target: {fileID: 1998175726}
   WinScreen: {fileID: 1674883245}
 --- !u!1 &289770459
 GameObject:
@@ -5072,6 +5072,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781236537}
   m_CullTransparentMesh: 1
+--- !u!1 &1998175726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2350974469043891236, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
+  m_PrefabInstance: {fileID: 835708207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2028016508 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6884615116134388044, guid: b5724553594dd3d43ba6e9c8eadd1a1b, type: 3}

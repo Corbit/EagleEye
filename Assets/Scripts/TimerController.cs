@@ -26,22 +26,18 @@ public class TimerController : MonoBehaviour
     {
         timeCounter.text = "Time: 00:00.00";
         timerGoing = false;
+        BeginTimer();
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && timerGoing == false)
-        {
-            BeginTimer();
-        }
-
-        /*if(Target == null)
+        if (Target == null)
         {
             winTime.text = timeCounter.text;
             EndTimer();
-            Time.timeScale = 0;
             WinScreen.SetActive(true);
-        }*/
+            Time.timeScale = 0f;
+        }
     }
 
     public void BeginTimer()
