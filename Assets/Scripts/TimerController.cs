@@ -17,6 +17,8 @@ public class TimerController : MonoBehaviour
     public GameObject Target;
     public GameObject WinScreen;
 
+    public Text[] winTimeArr1;
+
     private void Awake()
     {
         instance = this;
