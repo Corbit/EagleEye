@@ -34,7 +34,7 @@ public class TimerController : MonoBehaviour
         BeginTimer();
         if (Best != null)
         {
-            Best.text = PlayerPrefs.GetFloat("HighScore", 0).ToString();
+            Best.text = PlayerPrefs.GetFloat("HighScore", 59).ToString();
         }
     }
 
@@ -48,7 +48,7 @@ public class TimerController : MonoBehaviour
             floatnumber = float.Parse(bestTime);
             Debug.Log(bestTime);
             Debug.Log(floatnumber);
-            if (floatnumber < PlayerPrefs.GetFloat("HighScore", 0))
+            if (floatnumber < PlayerPrefs.GetFloat("HighScore", 59))
             {
                 PlayerPrefs.SetFloat("HighScore", floatnumber);
                 Best.text = floatnumber.ToString();
@@ -81,6 +81,14 @@ public class TimerController : MonoBehaviour
             timeCounter.text = timePlayingStr;
 
             yield return null;
+        }
+    }
+
+    private void OnGUI()
+    {
+        if(GUI.Button(new Rect(100, 200, 200,  60), "Delete"))
+        {
+            PlayerPrefs.DeleteAll();
         }
     }
 }
