@@ -10,6 +10,11 @@ public class FilterView : MonoBehaviour
     private string target = "Target_Hit";
     private string animal_1 = "Animal_1";
 
+
+    public GameObject dispmap;
+    public GameObject disptarget;
+    public GameObject dispplayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,20 +30,28 @@ public class FilterView : MonoBehaviour
         {
             hideAll();
             display(map);
+            dispmap.SetActive(true);
+            disptarget.SetActive(false);
+            dispplayer.SetActive(false);
         }
     
         //Target
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             hideAll();
-           display(target);
-            
+            display(target);
+            disptarget.SetActive(true);
+            dispmap.SetActive(false);
+            dispplayer.SetActive(false);
         }
         //Player
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {          
-           hideAll();
-           display(player);          
+            hideAll();
+            display(player);
+            dispplayer.SetActive(true);
+            dispmap.SetActive(false);
+            disptarget.SetActive(false);
         }
         //Animal 1
 
