@@ -626,6 +626,7 @@ MonoBehaviour:
   winTime: {fileID: 2094614674}
   Target: {fileID: 1998175726}
   WinScreen: {fileID: 1674883245}
+  winTimeArr1: []
 --- !u!1 &289770459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,7 +3843,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 383480401952537263, guid: b1dd2cb66a51b1149bc6803a628d3088, type: 3}
   RemainingTransform: {fileID: 252086305}
-  ammocount: 0
   setTargetprefab: {fileID: 41901577759302351, guid: f0a726f832e74ae46a030afd092ecc9e, type: 3}
   setProtectedprefab: {fileID: 0}
   GameOverScreen: {fileID: 713453678}
@@ -5432,6 +5432,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1660711296108601901, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
+      propertyPath: magazine
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3514290007081965441, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5484,5 +5488,9 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7404377722455095303, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
