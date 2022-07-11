@@ -10,9 +10,9 @@ public class Overlay : MonoBehaviour
     public Transform myPrefab;
     GameObject[] ammocountarr;
     GameObject go;
+    int ammocount = 0;
+    Shooting shooting;
     public Transform RemainingTransform;
-    public int ammocount = 0;
-
     public Transform setTargetprefab;
     public Transform setProtectedprefab;
 
@@ -20,6 +20,7 @@ public class Overlay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        shooting = GameObject.Find("Player").GetComponent<Shooting>();
         ammoprefab();
         Targetprefab();
         Protectedprefab();
@@ -47,8 +48,8 @@ public class Overlay : MonoBehaviour
 
     public void ammoprefab()
     {
-        ammocountarr = new GameObject[5];
-        for (int i = 0; i < 5; i++)
+        ammocountarr = new GameObject[shooting.magazine];
+        for (int i = 0; i < ammocountarr.Length; i++)
         {
             var position = new Vector3(-80 + i * 30, 260, 0);
             go = (Instantiate(myPrefab, position, Quaternion.identity)).gameObject;
