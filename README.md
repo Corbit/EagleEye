@@ -20,8 +20,8 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
     - [x] Auch wenn gerade nicht die Ansicht des Targets aktiv ist
 - [ ] Das Level ist gescheitert, wenn der Player ein geschütztes Target erlegt oder keine Munition mehr hat.
     - [x] Auswahlmenu
-        - [ ] Level neu starten
-        - [ ] Zurück zum Startmenü
+        - [x] Level neu starten
+        - [x] Zurück zum Startmenü
 - [ ] 9 verschiedene Level
     - [ ] inklusive 3 Tutorial Level
         - [x] Spieler lernt auf Targets zu schießen
@@ -32,19 +32,19 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
     - [ ] Das gilt für geforderte Targets und zu verschonende Targets
     - [ ] In nachfolgenden Leveln beweget sich auch der Player auf vordefinierten Routen, um die Schwierigkeit zu erhöhen.
     - [ ] Der Spieler muss so den Abschuss auch zeitlich planen
-- [ ] Overlay/ seitliche Anzeige für Informationen
-    - [ ] Levelstufe
-    - [ ] Munitionsstand
+- [x] Overlay/ seitliche Anzeige für Informationen
+    - [x] Levelstufe
+    - [x] Munitionsstand
     - [ ] Momentane Ansicht, mögliche Ansichten
-    - [ ] geschützte Targets
-    - [ ] freigegebenes Target
+    - [x] geschützte Targets
+    - [x] freigegebenes Target
 - [ ] Bestenliste für die schnellste Zeit
     - [ ] Pro Level
     - [ ]für den gesamten Durchlauf
 - [ ] Startmenü
-    - [ ] Starten eines neuen Spieles
-    - [ ] Beenden der Anwendung
-    - [ ] Levelauswahl
+    - [x] Starten eines neuen Spieles
+    - [x] Beenden der Anwendung
+    - [x] Levelauswahl
     - [ ]Bestenliste
 - [x] Pausemenü
     - [x] Weiterspielen
