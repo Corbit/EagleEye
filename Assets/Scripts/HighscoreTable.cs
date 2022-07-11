@@ -10,6 +10,6 @@ public class HighscoreTable : MonoBehaviour
 
     void Awake()
     {
-        HighscoreLv1.text = PlayerPrefs.GetFloat("Highscore",highscore.floatnumber).ToString();
+        HighscoreLv1.text = PlayerPrefs.GetFloat("HighScore",59).ToString();
     }
 }
