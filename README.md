@@ -41,11 +41,11 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
 - [ ] Bestenliste für die schnellste Zeit
     - [ ] Pro Level
     - [ ]für den gesamten Durchlauf
-- [ ] Startmenü
+- [x] Startmenü
     - [x] Starten eines neuen Spieles
     - [x] Beenden der Anwendung
     - [x] Levelauswahl
-    - [ ]Bestenliste
+    - [x]Bestenliste
 - [x] Pausemenü
     - [x] Weiterspielen
     - [x] Level beenden/Startmenü
