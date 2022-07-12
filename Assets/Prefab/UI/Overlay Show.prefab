@@ -814,7 +814,6 @@ GameObject:
   - component: {fileID: 5950734746160099854}
   - component: {fileID: 5950734746160099855}
   - component: {fileID: 5950734746160099849}
-  - component: {fileID: 5950734746160099848}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -905,29 +904,9 @@ MonoBehaviour:
   floatnumber: 0
   Second: {fileID: 0}
   Third: {fileID: 0}
+  win: 0
   Target: {fileID: 0}
   WinScreen: {fileID: 0}
---- !u!114 &5950734746160099848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5950734746160099853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69a1313340528ec4886d3d4200baa6c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HighscoreLv1: {fileID: 5950734745561394735}
-  HighscoreLv2: {fileID: 0}
-  HighscoreLv3: {fileID: 0}
-  HighscoreLv4: {fileID: 0}
-  HighscoreLv5: {fileID: 0}
-  HighscoreLv6: {fileID: 0}
-  HighscoreLv7: {fileID: 0}
-  HighscoreLv8: {fileID: 0}
-  HighscoreLv9: {fileID: 0}
 --- !u!1 &5950734746174296286
 GameObject:
   m_ObjectHideFlags: 0
