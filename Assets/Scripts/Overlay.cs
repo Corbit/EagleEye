@@ -40,6 +40,7 @@ public class Overlay : MonoBehaviour
             if (ammocount >= ammocountarr.Length)
             {
                 GameOverScreen.SetActive(true);
+                Debug.Log("Lose");
                 Time.timeScale = 0f;
             }
         }

@@ -17,6 +17,9 @@ public class TimerController : MonoBehaviour
     public Text Second;
     public Text Third;
 
+    public bool win;
+
+
     private TimeSpan timePlaying;
     private bool timerGoing;
     private float elapsedTime;
@@ -47,7 +50,7 @@ public class TimerController : MonoBehaviour
             floatnumber = float.Parse(bestTime);
             sethighscore();
             WinScreen.SetActive(true);
-            Time.timeScale = 0f;           
+            Time.timeScale = 0f;      
         }
     }
 
@@ -70,7 +73,7 @@ public class TimerController : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
-            string timePlayingStr = "" + timePlaying.ToString("ss','ff");
+            string timePlayingStr = "" + timePlaying.ToString("mm','ss");
             timeCounter.text = timePlayingStr;
 
             yield return null;
