@@ -9,7 +9,7 @@ public class FollowThePath : MonoBehaviour
 
     // Array of waypoints to walk from one to the next one
     [SerializeField]
-    private Transform[] waypoints;
+    private Vector3[] waypoints;
 
     // Walk speed that can be set in Inspector
     [SerializeField]
@@ -26,7 +26,7 @@ public class FollowThePath : MonoBehaviour
     {
 
         // Set position of Enemy as position of the first waypoint
-        transform.position = waypoints[waypointIndex].transform.position;
+        transform.position = waypoints[waypointIndex];
     }
 
     // Update is called once per frame
@@ -48,13 +48,13 @@ public class FollowThePath : MonoBehaviour
             // Move Enemy from current waypoint to the next one
             // using MoveTowards method
             transform.position = Vector2.MoveTowards(transform.position,
-               waypoints[waypointIndex].transform.position,
+               waypoints[waypointIndex],
                moveSpeed * Time.deltaTime);
 
             // If Enemy reaches position of waypoint he walked towards
             // then waypointIndex is increased by 1
             // and Enemy starts to walk to the next waypoint
-            if (transform.position == waypoints[waypointIndex].transform.position)
+            if (transform.position == waypoints[waypointIndex])
             {
                 waypointIndex += 1;
             }
