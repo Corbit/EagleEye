@@ -40,24 +40,28 @@ public class FollowThePath : MonoBehaviour
     // Method that actually make Enemy walk
     private void Move()
     {
-        // If Enemy didn't reach last waypoint it can move
-        // If enemy reached last waypoint then it stops
-        if (waypointIndex <= waypoints.Length - 1)
-        {
-
-            // Move Enemy from current waypoint to the next one
-            // using MoveTowards method
-            transform.position = Vector2.MoveTowards(transform.position,
-               waypoints[waypointIndex],
-               moveSpeed * Time.deltaTime);
-
-            // If Enemy reaches position of waypoint he walked towards
-            // then waypointIndex is increased by 1
-            // and Enemy starts to walk to the next waypoint
-            if (transform.position == waypoints[waypointIndex])
+        
+        
+            // If Enemy didn't reach last waypoint it can move
+            // If enemy reached last waypoint then it stops
+            if (waypointIndex <= waypoints.Length - 1)
             {
-                waypointIndex += 1;
+
+                // Move Enemy from current waypoint to the next one
+                // using MoveTowards method
+                transform.position = Vector2.MoveTowards(transform.position,
+                   waypoints[waypointIndex],
+                   moveSpeed * Time.deltaTime);
+
+                // If Enemy reaches position of waypoint he walked towards
+                // then waypointIndex is increased by 1
+                // and Enemy starts to walk to the next waypoint
+                if (transform.position == waypoints[waypointIndex])
+                {
+                    waypointIndex += 1;
+                }
+            if (waypointIndex == waypoints.Length )
+            { waypointIndex = 0; }
             }
-        }
     }
 }
