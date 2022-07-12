@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Overlay : MonoBehaviour
-{
-
+{ 
     public Transform myPrefab;
     GameObject[] ammocountarr;
     GameObject go;

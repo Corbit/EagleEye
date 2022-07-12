@@ -31,7 +31,6 @@ public class TimerController : MonoBehaviour
     {
         instance = this;
     }
-    // Start is called before the first frame update
     void Start()
     {
         timeCounter.text = "00,00";
