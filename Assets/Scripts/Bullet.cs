@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
     private int bulletTimer = 1700;
     Vector3 lastVelocity;
     public AudioSource tickSource;
+    public int durability;
 
     private void Awake()
     {
@@ -34,10 +35,15 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Base")
         {
-            var speed = lastVelocity.magnitude;
-            var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+            if (durability < 2)
+            {
+                var speed = lastVelocity.magnitude;
+                var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
-            rb.velocity = direction * Mathf.Max(speed, 0.2f);
+                rb.velocity = direction * Mathf.Max(speed, 0.2f);
+                durability++;
+            }
+            else { Destroy(collision.gameObject); }
         }
         else if (collision.gameObject.tag == "Player")
         {
