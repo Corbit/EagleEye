@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6043674713489193312}
   - component: {fileID: 6043674713489193313}
+  - component: {fileID: 8914445930604813732}
   m_Layer: 0
-  m_Name: Filter
+  m_Name: Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,3 +45,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5930dd24180454ab2b206bebcc2c7ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dispmap: {fileID: 0}
+  disptarget: {fileID: 0}
+  dispplayer: {fileID: 0}
+--- !u!114 &8914445930604813732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6043674713489193314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a07a3668e9a3b418aadc250063c832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOveScreen: {fileID: 4444664624037488428, guid: bc89f9d5a9f75814fbbaa07ff9d460db, type: 3}
+  pauseScreen: {fileID: 8330318019735618548, guid: 680715d2ec0777e4fb1144eb97ac9144, type: 3}
