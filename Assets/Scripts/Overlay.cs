@@ -13,36 +13,35 @@ public class Overlay : MonoBehaviour
     Shooting shooting;
     public Transform RemainingTransform;
     public Transform setTargetprefab;
-    public Transform setProtectedprefab;
+    //public Transform setProtectedprefab;
 
-    public GameObject GameOverScreen;
+   // public GameObject GameOverScreen;
     // Start is called before the first frame update
     void Start()
     {
         shooting = GameObject.Find("Player").GetComponent<Shooting>();
         ammoprefab();
         Targetprefab();
-        Protectedprefab();
+        //Protectedprefab();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Time.timeScale != 0)
-        {
+        
             if (Input.GetButtonDown("Fire1") && ammocount < ammocountarr.Length)
             {
                 Destroy(ammocountarr[ammocount]);
                 ammocount++;
             }
 
-            if (ammocount >= ammocountarr.Length)
+            /* if (ammocount >= ammocountarr.Length)
             {
                 GameOverScreen.SetActive(true);
                 Debug.Log("Lose");
                 Time.timeScale = 0f;
-            }
-        }
+            } */
+        
     }
 
 
@@ -66,11 +65,11 @@ public class Overlay : MonoBehaviour
         go.transform.SetParent(RemainingTransform, false);
     }
 
-    public void Protectedprefab()
+    /* public void Protectedprefab()
     {
         var position = new Vector3(0,-170, 0);
         go = (Instantiate(setProtectedprefab, position, Quaternion.identity)).gameObject;
         
         go.transform.SetParent(RemainingTransform, false);
-    }
+    } */
 }

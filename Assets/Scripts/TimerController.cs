@@ -25,7 +25,6 @@ public class TimerController : MonoBehaviour
     private float elapsedTime;
 
     public GameObject Target;
-    public GameObject WinScreen;
 
     private void Awake()
     {
@@ -48,8 +47,7 @@ public class TimerController : MonoBehaviour
             bestTime = winTime.text;
             floatnumber = float.Parse(bestTime);
             sethighscore();
-            WinScreen.SetActive(true);
-            Time.timeScale = 0f;      
+            
         }
     }
 
@@ -79,13 +77,6 @@ public class TimerController : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-        if(GUI.Button(new Rect(100, 200, 200,  60), "Delete"))
-        {
-            PlayerPrefs.DeleteAll();
-        }
-    }
 
     public void gethighscore()
     {
