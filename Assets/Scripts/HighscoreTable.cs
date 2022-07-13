@@ -15,6 +15,7 @@ public class HighscoreTable : MonoBehaviour
     public Text HighscoreLv7;
     public Text HighscoreLv8;
     public Text HighscoreLv9;
+    public Text gesHighscore;
 
     void Awake()
     {
@@ -27,5 +28,6 @@ public class HighscoreTable : MonoBehaviour
         HighscoreLv7.text = PlayerPrefs.GetFloat("HighScore7", 59).ToString();
         HighscoreLv8.text = PlayerPrefs.GetFloat("HighScore8", 59).ToString();
         HighscoreLv9.text = PlayerPrefs.GetFloat("HighScore9", 59).ToString();
+        gesHighscore.text = (PlayerPrefs.GetFloat("HighScore1", 59) + PlayerPrefs.GetFloat("HighScore2", 59) + PlayerPrefs.GetFloat("HighScore3", 59) + PlayerPrefs.GetFloat("HighScore4", 59) + PlayerPrefs.GetFloat("HighScore5", 59) + PlayerPrefs.GetFloat("HighScore6", 59) + PlayerPrefs.GetFloat("HighScore7", 59) + PlayerPrefs.GetFloat("HighScore8", 59) + PlayerPrefs.GetFloat("HighScore9", 59)).ToString();
     }
 }

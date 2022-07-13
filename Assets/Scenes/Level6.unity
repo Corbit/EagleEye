@@ -193,6 +193,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4444664624495528169, guid: bc89f9d5a9f75814fbbaa07ff9d460db, type: 3}
   m_PrefabInstance: {fileID: 11029148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &13239238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2350974469043891236, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
+  m_PrefabInstance: {fileID: 1170706940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &103386781
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 2350974469043891236, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
+      objectReference: {fileID: 13239238}
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: winTime
       value: 
