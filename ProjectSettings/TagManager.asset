@@ -17,6 +17,7 @@ TagManager:
   - GameOver
   - Pause
   - Win
+  - Friendly
   layers:
   - Default
   - TransparentFX

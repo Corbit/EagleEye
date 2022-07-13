@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_LocalPosition.x
@@ -317,8 +317,35 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7404377722455095303, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
+--- !u!1 &426746315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2125191615393875356, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
+  m_PrefabInstance: {fileID: 1852078876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &426746316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426746315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2601cee878ba298439eab23d0c1e5bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -5.093873, y: -2.03, z: 0}
+  - {x: -3.54, y: -2.03, z: 0}
+  - {x: 0.11, y: -2.03, z: 0}
+  - {x: 1.27, y: -2.03, z: 0}
+  moveSpeed: 2
 --- !u!1 &755577838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2755771981093627658, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2755771981093627658, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1830,7 +1857,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1741559826754192796, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1741559826754192796, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
       propertyPath: m_LocalPosition.x
