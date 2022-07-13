@@ -320,6 +320,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140633250 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5950734745561394735, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+  m_PrefabInstance: {fileID: 1734850172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &174192496
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,9 +612,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5017827627015314839, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5017827627863549665, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
       propertyPath: m_Name
       value: WinScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017827627863549665, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5017827627863549670, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
       propertyPath: m_RootOrder
@@ -662,6 +681,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &808862195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2125191615393875356, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
+  m_PrefabInstance: {fileID: 2014826536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &932674525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,9 +2087,13 @@ PrefabInstance:
       value: Level 2
       objectReference: {fileID: 0}
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+      propertyPath: Best1
+      value: 
+      objectReference: {fileID: 140633250}
+    - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 8837713785809896790, guid: 68d743184c7045246b7db99d38f5e6d0, type: 3}
+      objectReference: {fileID: 808862195}
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: winTime
       value: 
