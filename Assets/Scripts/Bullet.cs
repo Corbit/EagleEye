@@ -45,18 +45,15 @@ public class Bullet : MonoBehaviour
             }
             else { Destroy(gameObject); }
         }
-        else if (collision.gameObject.tag == "Player")
-        {
-            // Game Over
-        }
         else if (collision.gameObject.tag == "Target_Hit")
         {
             Destroy(collision.gameObject);
             tickSource.Play();
+            Destroy(gameObject);
+        } else {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
-        else if (collision.gameObject.tag == "Friendly")
-        {
-            //Game Over
-        }
+        
     }
 }
