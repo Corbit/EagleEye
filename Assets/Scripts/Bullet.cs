@@ -43,7 +43,7 @@ public class Bullet : MonoBehaviour
                 rb.velocity = direction * Mathf.Max(speed, 0.2f);
                 durability++;
             }
-            else { Destroy(collision.gameObject); }
+            else { Destroy(gameObject); }
         }
         else if (collision.gameObject.tag == "Player")
         {
