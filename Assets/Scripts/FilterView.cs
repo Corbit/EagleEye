@@ -111,10 +111,10 @@ public class FilterView : MonoBehaviour
         display(obstacle);
         display(player);
         display(target);
-        hide(animal_1);
-        hide(animal_2);
-        hide(animal_3);
-        hide(animal_4);
+        display(animal_1);
+        display(animal_2);
+        display(animal_3);
+        display(animal_4);
     }
 
     void hideAll() {
