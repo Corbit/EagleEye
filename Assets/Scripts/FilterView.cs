@@ -9,6 +9,9 @@ public class FilterView : MonoBehaviour
     private string player = "Player";
     private string target = "Target_Hit";
     private string animal_1 = "Animal_1";
+    private string animal_2 = "Animal_2";
+    private string animal_3 = "Animal_3";
+    private string animal_4 = "Animal_4";
 
 
     public GameObject dispmap;
@@ -57,8 +60,28 @@ public class FilterView : MonoBehaviour
         //Animal 1
 
         if (Input.GetKeyDown(KeyCode.Alpha4)) {
-            
+            hideAll();
+            display(animal_1);
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            hideAll();
+            display(animal_2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            hideAll();
+            display(animal_3);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            hideAll();
+            display(animal_4);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -88,6 +111,10 @@ public class FilterView : MonoBehaviour
         display(obstacle);
         display(player);
         display(target);
+        hide(animal_1);
+        hide(animal_2);
+        hide(animal_3);
+        hide(animal_4);
     }
 
     void hideAll() {
@@ -96,5 +123,8 @@ public class FilterView : MonoBehaviour
         hide(player);
         hide(target);
         hide(animal_1);
+        hide(animal_2);
+        hide(animal_3);
+        hide(animal_4);
     }
 }
