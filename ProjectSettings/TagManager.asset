@@ -13,6 +13,10 @@ TagManager:
   - Animal_2
   - Animal_3
   - Animal_4
+  - Bullet
+  - GameOver
+  - Pause
+  - Win
   layers:
   - Default
   - TransparentFX
