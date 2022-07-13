@@ -7,24 +7,14 @@ public class PauseMenu : MonoBehaviour
 {
     public bool IsPaused;
     public GameObject PauseUI;
-    public GameObject Target;
 
+    private void Start() {
+        IsPaused = false;
+    }
+
+  
     void Update()
     {
-        if (IsPaused)
-        {
-            PauseUI.SetActive(true);
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            if(Target != null)
-            {
-                PauseUI.SetActive(false);
-                Time.timeScale = 1f;
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             IsPaused = !IsPaused;
@@ -45,7 +35,6 @@ public class PauseMenu : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Time.timeScale = 1f;
         IsPaused = !IsPaused;
     }
 
