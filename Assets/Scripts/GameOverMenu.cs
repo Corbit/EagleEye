@@ -12,6 +12,7 @@ public class GameOverMenu : MonoBehaviour
 
     [SerializeField] public GameObject uiGameOver;
     public bool gameOver;
+    
     // Start is called before the first frame update
     void Start()
     {
