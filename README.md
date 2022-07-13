@@ -34,7 +34,7 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
   - [x] Das gilt für geforderte Targets und zu verschonende Targets
   - [ ] In nachfolgenden Leveln beweget sich auch der Player auf vordefinierten Routen, um die Schwierigkeit zu erhöhen.
   - [ ] Der Spieler muss so den Abschuss auch zeitlich planen
-- [] Overlay/ seitliche Anzeige für Informationen
+- [ ] Overlay/ seitliche Anzeige für Informationen
   - [x] Levelstufe
   - [x] Munitionsstand
   - [ ] Momentane Ansicht, mögliche Ansichten
@@ -43,7 +43,7 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
 - [ ] Bestenliste für die schnellste Zeit
   - [x] Pro Level
   - [ ] für den gesamten Durchlauf
-- [] Startmenü
+- [ ] Startmenü
   - [x] Starten eines neuen Spieles
   - [x] Beenden der Anwendung
   - [x] Levelauswahl
