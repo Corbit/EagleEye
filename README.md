@@ -30,20 +30,20 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
     - [x] Spieler lernt nicht auf falsche Targets zu schießen
     - [ ] Spieler lernt, dass Projektile von Hindernissen abprallen
 - [ ] In höheren Leveln (~ ab Level 6) erhöht sich der Schwierigkeitsgrad.
-  - [ ] Anstatt stillstehenden Targets, gibt es nur Targets, die sich auf einer vordefinierten Route bewegen
-  - [ ] Das gilt für geforderte Targets und zu verschonende Targets
+  - [x] Anstatt stillstehenden Targets, gibt es nur Targets, die sich auf einer vordefinierten Route bewegen
+  - [x] Das gilt für geforderte Targets und zu verschonende Targets
   - [ ] In nachfolgenden Leveln beweget sich auch der Player auf vordefinierten Routen, um die Schwierigkeit zu erhöhen.
   - [ ] Der Spieler muss so den Abschuss auch zeitlich planen
-- [x] Overlay/ seitliche Anzeige für Informationen
+- [] Overlay/ seitliche Anzeige für Informationen
   - [x] Levelstufe
   - [x] Munitionsstand
   - [ ] Momentane Ansicht, mögliche Ansichten
   - [x] geschützte Targets
   - [x] freigegebenes Target
 - [ ] Bestenliste für die schnellste Zeit
-  - [ ] Pro Level
-  - [ ]für den gesamten Durchlauf
-- [ ] Startmenü
+  - [x] Pro Level
+  - [ ] für den gesamten Durchlauf
+- [] Startmenü
   - [x] Starten eines neuen Spieles
   - [x] Beenden der Anwendung
   - [x] Levelauswahl
