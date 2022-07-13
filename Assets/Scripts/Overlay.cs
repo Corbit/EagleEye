@@ -35,15 +35,7 @@ public class Overlay : MonoBehaviour
             {
                 Destroy(ammocountarr[ammocount]);
                 ammocount++;
-            }
-
-            /* if (ammocount >= ammocountarr.Length)
-            {
-                GameOverScreen.SetActive(true);
-                Debug.Log("Lose");
-                Time.timeScale = 0f;
-            } */
-        
+            }        
     }
 
 

@@ -20,7 +20,7 @@ public class GameOverMenu : MonoBehaviour
             nonTargets.AddRange(GameObject.FindGameObjectsWithTag("Animal_"+i));
         }  
         startint = nonTargets.Count;
-        Debug.Log(startint);
+        //Debug.Log(startint);
 
         shooting = GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>();
         gameOver = false;
@@ -43,7 +43,7 @@ public class GameOverMenu : MonoBehaviour
         {
             nonTargets.AddRange(GameObject.FindGameObjectsWithTag("Animal_" + i));
         }
-        Debug.Log(nonTargets.Count);
+        //Debug.Log(nonTargets.Count);
         if(startint != nonTargets.Count) {
             gameOver = true;
         }

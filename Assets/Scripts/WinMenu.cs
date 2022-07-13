@@ -16,7 +16,7 @@ public class WinMenu : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(GameObject.FindGameObjectsWithTag("Target_Hit").Length);
+        //Debug.Log(GameObject.FindGameObjectsWithTag("Target_Hit").Length);
         if(GameObject.FindGameObjectsWithTag("Target_Hit").Length == 0) {
             won = true;
         }

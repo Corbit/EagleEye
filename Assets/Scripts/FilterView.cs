@@ -17,6 +17,7 @@ public class FilterView : MonoBehaviour
     public GameObject dispmap;
     public GameObject disptarget;
     public GameObject dispplayer;
+    public GameObject dispprotected;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class FilterView : MonoBehaviour
             dispmap.SetActive(true);
             disptarget.SetActive(false);
             dispplayer.SetActive(false);
+            dispprotected.SetActive(false);
         }
     
         //Target
@@ -47,6 +49,7 @@ public class FilterView : MonoBehaviour
             disptarget.SetActive(true);
             dispmap.SetActive(false);
             dispplayer.SetActive(false);
+            dispprotected.SetActive(false);
         }
         //Player
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -56,12 +59,17 @@ public class FilterView : MonoBehaviour
             dispplayer.SetActive(true);
             dispmap.SetActive(false);
             disptarget.SetActive(false);
+            dispprotected.SetActive(false);
         }
         //Animal 1
 
         if (Input.GetKeyDown(KeyCode.Alpha4)) {
             hideAll();
             display(animal_1);
+            dispprotected.SetActive(true);
+            dispplayer.SetActive(false);
+            dispmap.SetActive(false);
+            disptarget.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
