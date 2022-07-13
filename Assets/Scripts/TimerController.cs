@@ -14,8 +14,6 @@ public class TimerController : MonoBehaviour
     public Text winTime;
     public Text Best;
     public float floatnumber = float.Parse("60");
-    public Text Second;
-    public Text Third;
 
     public bool win;
 

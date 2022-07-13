@@ -13,16 +13,18 @@ public class Overlay : MonoBehaviour
     Shooting shooting;
     public Transform RemainingTransform;
     public Transform setTargetprefab;
-    //public Transform setProtectedprefab;
+    public Transform setProtectedprefab1;
+    public Transform setProtectedprefab2;
+    
 
-   // public GameObject GameOverScreen;
+    // public GameObject GameOverScreen;
     // Start is called before the first frame update
     void Start()
     {
         shooting = GameObject.Find("Player").GetComponent<Shooting>();
         ammoprefab();
         Targetprefab();
-        //Protectedprefab();
+        Protectedprefab();
     }
 
     // Update is called once per frame
@@ -65,11 +67,11 @@ public class Overlay : MonoBehaviour
         go.transform.SetParent(RemainingTransform, false);
     }
 
-    /* public void Protectedprefab()
+    public void Protectedprefab()
     {
         var position = new Vector3(0,-170, 0);
-        go = (Instantiate(setProtectedprefab, position, Quaternion.identity)).gameObject;
+        go = (Instantiate(setProtectedprefab1, position, Quaternion.identity)).gameObject;
         
         go.transform.SetParent(RemainingTransform, false);
-    } */
+    }
 }

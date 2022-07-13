@@ -352,10 +352,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5950734746043336196, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+      propertyPath: m_text
+      value: Level 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2350974469043891236, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: winTime
       value: 
@@ -416,6 +420,10 @@ PrefabInstance:
       propertyPath: GameOverScreen
       value: 
       objectReference: {fileID: 11029149}
+    - target: {fileID: 5950734747573527606, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+      propertyPath: setProtectedprefab1
+      value: 
+      objectReference: {fileID: 2680315954789284137, guid: 68d743184c7045246b7db99d38f5e6d0, type: 3}
     m_RemovedComponents:
     - {fileID: 5950734746160099848, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
@@ -1671,7 +1679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2125191615393875356, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
       propertyPath: m_TagString
-      value: Friendly
+      value: Animal_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
@@ -1806,7 +1814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2350974469043891236, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Target_Hit
       objectReference: {fileID: 0}
     - target: {fileID: 2755771981093627658, guid: ef24043fac0b83f4a82c8775c2020d83, type: 3}
       propertyPath: m_RootOrder
