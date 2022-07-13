@@ -14,7 +14,7 @@ public class Shooting : MonoBehaviour
     {
         if(Time.timeScale != 0)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && magazine != 0)
             {
                 Shoot();
             }
