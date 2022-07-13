@@ -334,6 +334,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+      propertyPath: winTime
+      value: 
+      objectReference: {fileID: 1300380835}
     - target: {fileID: 5950734746805755736, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: m_Name
       value: Overlay Show
@@ -772,6 +776,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
+--- !u!114 &1300380835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5017827627401897384, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
+  m_PrefabInstance: {fileID: 1300380834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1368833242
 PrefabInstance:
   m_ObjectHideFlags: 0
