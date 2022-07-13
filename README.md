@@ -8,9 +8,9 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
 
 ## Anforderungen
 
-- [ ] Mit Num Pad/Zahlen durch die verschiedenen Ansichten filtern.
+- [x] Mit Num Pad/Zahlen durch die verschiedenen Ansichten filtern.
   - [x] Ansicht für die Position des Players
-  - [ ] Ansicht für die jeweiligen geschützten Targets
+  - [x] Ansicht für die jeweiligen geschützten Targets
   - [x] Ansicht für die freigegeben Targets
   - [x] Ansicht der Karte inklusiven Hindernissen
 - [x] Zielen und Schießen via Maus
@@ -18,9 +18,9 @@ Du bist ein Jäger im Wald, doch musst du dich für eine erfolgreiche Jagd auf d
   - [x] Durch Klicken der linken Maustaste wird ein Projektil verschossen
 - [x] Player verschießt Projektile/Pfeile, die von Hindernissen abprallen
   - [x] Einfallwinkel = Ausfallwinkel
-- [x] Hörbares Signal, wenn ein Target erlegt wurde
+- [o] Hörbares Signal, wenn ein Target erlegt wurde
   - [x] Auch wenn gerade nicht die Ansicht des Targets aktiv ist
-- [ ] Das Level ist gescheitert, wenn der Player ein geschütztes Target erlegt oder keine Munition mehr hat.
+- [x] Das Level ist gescheitert, wenn der Player ein geschütztes Target erlegt oder keine Munition mehr hat.
   - [x] Auswahlmenu
     - [x] Level neu starten
     - [x] Zurück zum Startmenü
