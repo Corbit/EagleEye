@@ -30,6 +30,7 @@ public class FilterView : MonoBehaviour
         {
             hideAll();
             display(map);
+            display(obstacle);
             dispmap.SetActive(true);
             disptarget.SetActive(false);
             dispplayer.SetActive(false);
