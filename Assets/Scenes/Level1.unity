@@ -808,7 +808,7 @@ MonoBehaviour:
   timeCounter: {fileID: 1707680644}
   bestTime: 
   winTime: {fileID: 67802071}
-  Best: {fileID: 0}
+  Best: {fileID: 599135234}
   floatnumber: 0
   win: 0
   Target: {fileID: 1998175726}

@@ -2244,6 +2244,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1660711296108601901, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
+      propertyPath: magazine
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3514290007081965441, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2254,11 +2258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.93
+      value: -4.92
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.45
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_LocalPosition.z

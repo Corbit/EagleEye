@@ -1924,6 +1924,10 @@ PrefabInstance:
       propertyPath: setTargetprefab
       value: 
       objectReference: {fileID: 2680315954789284137, guid: 68d743184c7045246b7db99d38f5e6d0, type: 3}
+    - target: {fileID: 5950734747573527606, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+      propertyPath: setProtectedprefab1
+      value: 
+      objectReference: {fileID: 2680315954789284137, guid: 68d743184c7045246b7db99d38f5e6d0, type: 3}
     m_RemovedComponents:
     - {fileID: 5950734746160099848, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
