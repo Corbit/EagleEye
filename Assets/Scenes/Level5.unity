@@ -2075,7 +2075,7 @@ PrefabInstance:
       objectReference: {fileID: 1901954564}
     - target: {fileID: 5017827626747254641, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
+      value: NextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5017827626767972174, guid: e0cc5cee93d46e24a88dffd1e2947487, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
