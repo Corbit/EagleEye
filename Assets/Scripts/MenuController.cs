@@ -33,7 +33,7 @@ public class MenuController : MonoBehaviour
             pauseMenu.PauseUI.SetActive(true);
         }
 
-        if(gameOverMenu.gameOver) {
+        if(gameOverMenu.gameOver && !winMenu.won) {
             Time.timeScale = 0;
 
             gameOverMenu.uiGameOver.SetActive(true);
