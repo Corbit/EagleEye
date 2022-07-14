@@ -2098,6 +2098,7 @@ MonoBehaviour:
   - {x: 2.59, y: 0.84, z: 0}
   - {x: 4.13, y: 1.3, z: 0}
   - {x: 0, y: 1.65, z: 0}
+  - {x: -0.22, y: 0.84, z: 0}
   moveSpeed: 2
 --- !u!1001 &1017377259
 PrefabInstance:
