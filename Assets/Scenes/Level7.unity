@@ -180,6 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc89f9d5a9f75814fbbaa07ff9d460db, type: 3}
+--- !u!1 &65697808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2125191615393875356, guid: e9ae06825e4127543bf130e1f6a84830, type: 3}
+  m_PrefabInstance: {fileID: 2082084878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &125075594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2247,10 @@ PrefabInstance:
       value: Level 7
       objectReference: {fileID: 0}
     - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 65697808}
+    - target: {fileID: 5950734746160099849, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: winTime
       value: 
       objectReference: {fileID: 1189384274}
@@ -2296,7 +2305,7 @@ PrefabInstance:
     - target: {fileID: 5950734747573527606, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: setTargetprefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6612296314486197354, guid: bd9d07385516b93418f7a26179d88076, type: 3}
     - target: {fileID: 5950734747573527606, guid: 8ce684243bd5c824abf248f748d5b2c0, type: 3}
       propertyPath: setProtectedprefab1
       value: 
@@ -2462,11 +2471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5253315595096267967, guid: bc099edd2968e8745b6f5fa462dbc876, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.67
+      value: -5.71
       objectReference: {fileID: 0}
     - target: {fileID: 5253315595096267967, guid: bc099edd2968e8745b6f5fa462dbc876, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8913509
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 5253315595096267967, guid: bc099edd2968e8745b6f5fa462dbc876, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2515,7 +2524,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6730737665506370191, guid: bc099edd2968e8745b6f5fa462dbc876, type: 3}
   m_PrefabInstance: {fileID: 4390356525422691034}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4390356525422691036
+--- !u!114 &4390356525422691037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2528,6 +2537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: -3.67, y: 1.891351, z: 0}
-  - {x: -3.67, y: 1.891351, z: 0}
+  - {x: -1.3, y: 1.99, z: 0}
+  - {x: -5.71, y: 2.06, z: 0}
+  - {x: -1.3, y: 1.99, z: 0}
   moveSpeed: 2
