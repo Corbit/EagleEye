@@ -21,7 +21,7 @@ public class Overlay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shooting = GameObject.Find("Player").GetComponent<Shooting>();
+        shooting = GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>();
         ammoprefab();
         Targetprefab();
         Protectedprefab();
