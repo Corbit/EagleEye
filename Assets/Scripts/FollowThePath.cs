@@ -37,7 +37,7 @@ public class FollowThePath : MonoBehaviour
         Move();
     }
 
-    // Method that actually make Enemy walk
+    
     private void Move()
     {
         
@@ -63,5 +63,6 @@ public class FollowThePath : MonoBehaviour
             if (waypointIndex == waypoints.Length )
             { waypointIndex = 0; }
             }
+                // If the last waypoint is identical to the first waypoint, it loops
     }
 }
