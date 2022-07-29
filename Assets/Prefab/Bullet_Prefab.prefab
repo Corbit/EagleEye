@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4238066930189171855}
   - component: {fileID: -8474336160164858557}
   - component: {fileID: 6022199318652874890}
-  - component: {fileID: 5682912352282869476}
+  - component: {fileID: 3222337842326528854}
   m_Layer: 0
   m_Name: Bullet_Prefab
   m_TagString: Bullet
@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c90eab3384769445be6dd4290517e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickSource: {fileID: 0}
+  tickSource: {fileID: 7860178406410319127, guid: b62479d7ec4b3d04fb4bcb04395e8656, type: 3}
   durability: 0
---- !u!82 &5682912352282869476
+--- !u!82 &3222337842326528854
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +159,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4d5c49785415b1b48955f180604e72a9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 93a00f9a5e3c6cb418b085565b7efaac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

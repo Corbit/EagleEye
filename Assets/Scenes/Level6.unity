@@ -2246,7 +2246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1660711296108601901, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: magazine
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3514290007081965441, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_Name
@@ -2262,7 +2262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 4320416064033649819, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_LocalPosition.z

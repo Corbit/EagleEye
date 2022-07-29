@@ -11,14 +11,16 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     private int bulletTimer = 1700;
     Vector3 lastVelocity;
-    public AudioSource tickSource;
+    
+    AudioSource tickSource;
     public int durability;
 
-    private void Awake()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         tickSource = GetComponent<AudioSource>();
     }
+   
 
     private void Update()
     {
@@ -47,9 +49,16 @@ public class Bullet : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Target_Hit")
         {
-            Destroy(collision.gameObject);
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             tickSource.Play();
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
+
+            Destroy(gameObject, 3f);
+            
+            
+            
+            
         } else {
             Destroy(collision.gameObject);
             Destroy(gameObject);
