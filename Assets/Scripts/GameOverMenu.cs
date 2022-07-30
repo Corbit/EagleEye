@@ -20,7 +20,6 @@ public class GameOverMenu : MonoBehaviour
             nonTargets.AddRange(GameObject.FindGameObjectsWithTag("Animal_"+i));
         }  
         startint = nonTargets.Count;
-        //Debug.Log(startint);
 
         shooting = GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>();
         gameOver = false;
@@ -50,12 +49,14 @@ public class GameOverMenu : MonoBehaviour
 
     }
 
+    //Zurück ins Menü
     public void Menu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainScreen");
     }
 
+    //Restart Level
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

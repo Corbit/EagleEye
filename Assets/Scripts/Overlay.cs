@@ -39,6 +39,7 @@ public class Overlay : MonoBehaviour
     }
 
 
+    //Overlay Munition Bild
     public void ammoprefab()
     {
         ammocountarr = new GameObject[shooting.magazine];
@@ -51,6 +52,7 @@ public class Overlay : MonoBehaviour
         }
     }
 
+    //Overlay Target Bild
     public void Targetprefab()
     {
         var position = new Vector3(0, 50, 0);
@@ -59,6 +61,7 @@ public class Overlay : MonoBehaviour
         go.transform.SetParent(RemainingTransform, false);
     }
 
+    //Overlay Protected Bild
     public void Protectedprefab()
     {
         var position = new Vector3(0,-170, 0);

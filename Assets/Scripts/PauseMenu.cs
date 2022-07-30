@@ -21,17 +21,22 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+
+    //Resume Game
     public void Resume()
     {
         IsPaused = !IsPaused;
     }
 
+
+    //Zurück ins Main Menu
     public void Menu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainScreen");
     }
 
+    //Restart Level
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

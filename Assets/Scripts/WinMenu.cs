@@ -23,32 +23,28 @@ public class WinMenu : MonoBehaviour
         
     }
 
-    private void Awake() {
-        
-        
- 
-    }
-
     void Update()
     {
-        //Debug.Log(GameObject.FindGameObjectsWithTag("Target_Hit").Length);
         if(GameObject.FindGameObjectsWithTag("Target_Hit").Length == 0) {
             won = true;
         }
     }
 
+    //Zurück ins Main Menu
     public void Menu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainScreen");
     }
 
+    //Restart Level
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         won = !won;
     }
 
+    //Starte das nächste Level
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
