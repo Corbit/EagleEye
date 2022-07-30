@@ -1694,11 +1694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1660711296108601901, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: magazine
-<<<<<<< Updated upstream
       value: 5
-=======
-      value: 6
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 3514290007081965441, guid: be472d59b1dfe4ed3a3bf43a2c4c2181, type: 3}
       propertyPath: m_Name
