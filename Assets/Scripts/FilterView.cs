@@ -13,7 +13,7 @@ public class FilterView : MonoBehaviour
     private string animal_3 = "Animal_3";
     private string animal_4 = "Animal_4";
 
-
+    // for the textdisplay
     public GameObject dispmap;
     public GameObject disptarget;
     public GameObject dispplayer;
@@ -26,7 +26,11 @@ public class FilterView : MonoBehaviour
         display(player);
     }
 
-    // Update is called once per frame
+    /*
+        because the gameobjects within the levels are correctly taged, it's possible to just activate/deactived the objects
+        when a button is tapped. 
+        It's also used to display a text for the current active view
+    */
     void Update()
     {
         //Map
@@ -90,7 +94,7 @@ public class FilterView : MonoBehaviour
             display(animal_4);
         }
 
-
+        //CHEAT
         if (Input.GetKeyDown(KeyCode.Space))
         {
             displayAll();
@@ -102,12 +106,14 @@ public class FilterView : MonoBehaviour
         }
     }
 
+    //hides all objects with given tag
     void hide(string type) {
         foreach(GameObject go in GameObject.FindGameObjectsWithTag(type)) {          
              go.GetComponent<Renderer>().enabled = false;
         }
     }
 
+    //displays all objects with given tag
     void display(string type) {
         foreach(GameObject go in GameObject.FindGameObjectsWithTag(type)) {          
              go.GetComponent<Renderer>().enabled = true;

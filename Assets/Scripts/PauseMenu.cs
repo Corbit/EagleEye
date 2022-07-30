@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    //flag if the game is paused
     public bool IsPaused;
     public GameObject PauseUI;
 
@@ -15,6 +16,7 @@ public class PauseMenu : MonoBehaviour
   
     void Update()
     {
+        //changes flag
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             IsPaused = !IsPaused;
@@ -29,7 +31,7 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    //Zurück ins Main Menu
+    //Zurï¿½ck ins Main Menu
     public void Menu()
     {
         Time.timeScale = 1f;

@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    This script controlls the display of the diffrent UI screens.
+*/
+
 public class MenuController : MonoBehaviour
 {
     GameOverMenu gameOverMenu;
     PauseMenu pauseMenu;
     WinMenu winMenu;
     
-    // Start is called before the first frame update
+    // fetch the scripts for the diffrent screens
     void Start()
     {
         gameOverMenu = GameObject.FindGameObjectWithTag("GameOver").GetComponent<GameOverMenu>();
@@ -16,7 +20,7 @@ public class MenuController : MonoBehaviour
         winMenu = GameObject.FindGameObjectWithTag("Win").GetComponent<WinMenu>();
     }
 
-    // Update is called once per frame
+    // handels that only one screen is displayed at the time and that the gametime is stopped and restartet properly
     void Update()
     {
         if(!pauseMenu.IsPaused && !gameOverMenu.gameOver && !winMenu.won) {

@@ -11,6 +11,8 @@ public class GameOverMenu : MonoBehaviour
     int startint;
 
     [SerializeField] public GameObject uiGameOver;
+
+    //Flag to signal if the game should be failed
     public bool gameOver;
     
     // Start is called before the first frame update
@@ -29,27 +31,28 @@ public class GameOverMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // changes gameoverFlag if no bullets are left
         if(shooting.magazine == 0 && GameObject.FindGameObjectsWithTag("Bullet").Length == 0) {
             gameOver = true;
         }
 
         /*
-         *   Collects all animal go. If this count change, it is presumed, that an animal was destroyed and the game ends 
+         *   Collects all animal GameObjects.
          */
         nonTargets = new ArrayList();
         for (int i = 1; i <= 4; i++)
         {
             nonTargets.AddRange(GameObject.FindGameObjectsWithTag("Animal_" + i));
         }
-        //Debug.Log(nonTargets.Count);
+
+        // if this values aren't equal an non-target was hit and the gameOverFlag is changed
         if(startint != nonTargets.Count) {
             gameOver = true;
         }
 
     }
 
-    //Zurück ins Menü
+    //Zurï¿½ck ins Menï¿½
     public void Menu()
     {
         Time.timeScale = 1f;

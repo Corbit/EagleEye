@@ -6,21 +6,20 @@ using UnityEngine.UI;
 
 public class Overlay : MonoBehaviour
 { 
-    public Transform ammoPrefab;
-    public Transform RemainingTransform;
-    public Transform setTargetprefab;
-    public Transform setProtectedprefab1;
-    public Transform setProtectedprefab2;
-    GameObject[] ammoCountArray;
+    public Transform myPrefab;
+    GameObject[] ammocountarr;
     GameObject go;
     int ammocount = 0;
     Shooting shooting;
     int currentMagazineSize;
-
+    public Transform RemainingTransform;
+    public Transform setTargetprefab;
+    public Transform setProtectedprefab1;
+    public Transform setProtectedprefab2;
     
 
-    
-    // Start is called before the first frame update 
+    /// public GameObject GameOverScreen;
+    // Start is called before the first frame update
     void Start()
     {
         shooting = GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>();
@@ -32,13 +31,12 @@ public class Overlay : MonoBehaviour
 
     /*
         checks if how much ammo is left and updates the view   
-    */
-    void Update()
+    */    void Update()
     {
         
-            if ( shooting.magazine < currentMagazineSize && ammocount < ammoCountArray.Length)
+            if ( shooting.magazine < currentMagazineSize && ammocount < ammocountarr.Length)
             {
-                Destroy(ammoCountArray[ammocount]);
+                Destroy(ammocountarr[ammocount]);
                 ammocount++;
                 currentMagazineSize--;
             }        
@@ -48,13 +46,13 @@ public class Overlay : MonoBehaviour
     //Overlay Munition Bild
     public void ammoprefab()
     {
-        ammoCountArray = new GameObject[shooting.magazine];
-        for (int i = 0; i < ammoCountArray.Length; i++)
+        ammocountarr = new GameObject[shooting.magazine];
+        for (int i = 0; i < ammocountarr.Length; i++)
         {
             var position = new Vector3(-80 + i * 30, 260, 0);
-            go = (Instantiate(ammoPrefab, position, Quaternion.identity)).gameObject;
-            ammoCountArray[i] = go;
-            ammoCountArray[i].transform.SetParent(RemainingTransform, false);
+            go = (Instantiate(myPrefab, position, Quaternion.identity)).gameObject;
+            ammocountarr[i] = go;
+            ammocountarr[i].transform.SetParent(RemainingTransform, false);
         }
     }
 

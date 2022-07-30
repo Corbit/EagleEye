@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class WinMenu : MonoBehaviour
 {
+    //flag for won game
     public bool won;
     public GameObject uiWin;
 
@@ -16,6 +17,7 @@ public class WinMenu : MonoBehaviour
     {
         won = false;
         
+        //checks if the last level is active and disables the "Next Level" button
         if(SceneManager.GetActiveScene().buildIndex == 9) {
 
             btnNext.SetActive(false);
@@ -25,12 +27,13 @@ public class WinMenu : MonoBehaviour
 
     void Update()
     {
+        //changes flag if no more targets are alive
         if(GameObject.FindGameObjectsWithTag("Target_Hit").Length == 0) {
             won = true;
         }
     }
 
-    //Zurück ins Main Menu
+    //Zurï¿½ck ins Main Menu
     public void Menu()
     {
         Time.timeScale = 1f;
@@ -44,7 +47,7 @@ public class WinMenu : MonoBehaviour
         won = !won;
     }
 
-    //Starte das nächste Level
+    //Starte das nï¿½chste Level
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
