@@ -31,7 +31,7 @@ public class Overlay : MonoBehaviour
     void Update()
     {
         
-            if (Input.GetButtonDown("Fire1") && ammocount < ammocountarr.Length)
+            if (shooting.magazine < ammocountarr.Length)
             {
                 Destroy(ammocountarr[ammocount]);
                 ammocount++;
